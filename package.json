@@ -1,0 +1,36 @@
+{
+  "name": "react-typescript-skeleton",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "react-typings": "typings install --global --save dt~react && typings install --global --save dt~react-dom",
+    "full-install": "npm install && npm run react-typings",
+    "build": "webpack",
+    "lint": "tslint --format verbose 'src/**/*'",
+    "start": "webpack-dev-server --port=3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benbraou/react-typescript-skeleton.git"
+  },
+  "author": "Oussama Ben Brahim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benbraou/react-typescript-skeleton/issues"
+  },
+  "homepage": "https://github.com/benbraou/react-typescript-skeleton#readme",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.8.2",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.3",
+    "typings": "^1.4.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  }
+}
