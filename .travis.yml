@@ -2,7 +2,7 @@ language: node_js
 
 node_js:
   - '5'
-  
+
 sudo: false
 
 matrix:
@@ -26,7 +26,7 @@ before_install:
   - npm prune
 
 script:
-  - npm full-install
+  - npm run full-install
   - npm run build
   - npm run lint
   - npm run test
