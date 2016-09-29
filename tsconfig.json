@@ -9,9 +9,7 @@
         "jsx": "react"
     },
     "include": [
-        "src/**/*"
-    ],
-    "files": [
-        "./typings/index.d.ts"
+        "src/**/*",
+        "typings/index.d.ts"
     ]
 }

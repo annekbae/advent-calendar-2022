@@ -5,10 +5,23 @@
   "main": "index.js",
   "scripts": {
     "react-typings": "typings install --global --save dt~react && typings install --global --save dt~react-dom",
-    "full-install": "npm install && npm run react-typings",
+    "enzyme-typings": "typings install --global --save dt~enzyme",
+    "jest-typings": "typings install --global --save dt~jest",
+    "full-install": "npm install && npm run react-typings && jest-typings && enzyme-typings",
     "build": "webpack",
     "lint": "tslint --format verbose 'src/**/*'",
+    "test": "jest",
     "start": "webpack-dev-server --port=3000"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "scriptPreprocessor": "jest-preprocessor.js",
+    "testRegex": "/src/.*\\.test\\.(ts|tsx|js)$"
   },
   "repository": {
     "type": "git",
@@ -25,6 +38,8 @@
     "react-dom": "^15.3.2"
   },
   "devDependencies": {
+    "enzyme": "^2.4.1",
+    "jest-cli": "^15.1.1",
     "source-map-loader": "^0.1.5",
     "ts-loader": "^0.8.2",
     "tslint": "^3.15.1",
