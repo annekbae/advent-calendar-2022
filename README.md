@@ -19,6 +19,11 @@ npm run build
 ```
 npm start
 ```
+## Running tests
+
+```
+npm test
+```
 
 ## Accessing your application
 
