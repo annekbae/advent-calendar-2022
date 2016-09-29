@@ -11,7 +11,7 @@
     "build": "webpack",
     "lint": "tslint --format verbose 'src/**/*'",
     "test": "jest",
-    "start": "webpack-dev-server --port=3000"
+    "start": "webpack-dev-server --port=3000  --hot --inline"
   },
   "jest": {
     "moduleFileExtensions": [
