@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export interface AppProps extends React.Props<any>{
+export interface AppProps extends React.Props<any> {
     message: string;
 };
 
