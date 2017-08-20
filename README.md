@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/benbraou/react-typescript-skeleton.svg?branch=master)](https://travis-ci.org/benbraou/react-typescript-skeleton)
+[![Build Status](https://travis-ci.org/benbraou/react-typescript-skeleton.svg?branch=main)](https://travis-ci.org/benbraou/react-typescript-skeleton)
 
 # React TypeScript Skeleton application
 This is a minimalist web application built with react, TypeScript and webpack.  
