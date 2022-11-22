@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react'
+import { experimentalStyled as styled } from '@mui/material/styles'
+import Box from '@mui/material/Box'
+import Paper from '@mui/material/Paper'
+import Grid from '@mui/material/Unstable_Grid2'
+import './App.css'
+import { AppName } from './interfaces'
+import DoorGrid from './DoorGrid'
 
-function App() {
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(2),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}))
+
+
+export default function App({ name }: AppName) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>{name}</h1>
+      <div>
+        {DoorGrid()}
+      </div>
     </div>
-  );
+  )
 }
-
-export default App;
